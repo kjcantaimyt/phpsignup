@@ -1,0 +1,176 @@
+/* Basic Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    transition: background-color 0.3s;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #1d1f2b; /* Matches the admin dashboard */
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #c4c6e4; /* Adjusted to match admin dashboard colors */
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #2c2e3e; /* Hover color for the admin dashboard */
+    color: #ffffff;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s ease;
+    background-color: #f8f9fc;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1d37a0; /* Blue accent color similar to the admin dashboard */
+}
+
+.header #datetime {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Section Styles */
+.section {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styles */
+button {
+    padding: 12px 18px;
+    background-color: #1d37a0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #2e4ea0;
+    transform: translateY(-3px);
+}
+
+/* Meal Display Styles */
+.meal-display {
+    text-align: center;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f4f7fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.2em;
+}
+
+.meal-display:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.meal-display p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Side Meals Section */
+.side-meals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Previous and Next Meals Styling */
+#previousMeal,
+#nextMeal {
+    flex: 1;
+    padding: 20px;
+    max-width: 48%;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background-color: #f4f7fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#previousMeal:hover,
+#nextMeal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
